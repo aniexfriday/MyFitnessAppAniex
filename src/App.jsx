@@ -6,7 +6,7 @@ import Gallery from './Pages/gallery/Gallery'
 import Plans from './Pages/plans/Plans'
 import Trainers from './Pages/trainers/Trainers'
 import NotFound from './Pages/notFound/NotFound'
-
+import Payment from './Pages/payment/payment'
 import Navbar from './components/navbar/Navbar'
 import './App.css'
 import Footer from './components/Footer'
@@ -24,7 +24,8 @@ function App() {
         <Route path='gallery' element={<Gallery/>}/>
         <Route path='plans' element={<Plans/>}/>
         <Route path='trainers' element={<Trainers/>}/>
-        <Route path='*' element={<NotFound/>}/>        
+        <Route path='*' element={<NotFound/>}/>      
+        <Route path='Payment' element={<Payment/>}/>
       </Routes>
       <Footer/>
     </Router>

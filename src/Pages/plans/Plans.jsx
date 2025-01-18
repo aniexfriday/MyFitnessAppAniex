@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header';
 import HeaderImage from '../../images/header_bg_4.jpg';
 import Card from '../../UI/Card';
@@ -6,6 +7,12 @@ import { plans } from '../../data';
 import './plans.css';
 
 const Plans = () => {
+  const navigate = useNavigate();
+
+  const handleChoosePlan = (planId) => {
+    navigate('/payment', { state: { planId } });
+  };
+
   return (
     <>
       <Header title='Membership Plans' image={HeaderImage}>
@@ -28,7 +35,12 @@ const Plans = () => {
                       )
                     })
                   }
-                  <button className='btn lg'>Choose Plan</button>
+                  <button 
+                    className='btn lg' 
+                    onClick={() => handleChoosePlan(plan.id)}
+                  >
+                    Choose Plan
+                  </button>
                 </Card>
               )
             })
@@ -39,4 +51,4 @@ const Plans = () => {
   )
 }
 
-export default Plans
+export default Plans;
