@@ -8,8 +8,10 @@ import Trainers from './Pages/trainers/Trainers'
 import NotFound from './Pages/notFound/NotFound'
 import Payment from './Pages/payment/payment'
 import Navbar from './components/navbar/Navbar'
+import Register from './Pages/register/register'
 import './App.css'
 import Footer from './components/Footer'
+import Login from './Pages/loginPage/login'
 
 function App() {
   
@@ -26,6 +28,8 @@ function App() {
         <Route path='trainers' element={<Trainers/>}/>
         <Route path='*' element={<NotFound/>}/>      
         <Route path='Payment' element={<Payment/>}/>
+        <Route path='Register' element={<Register/>}/>
+        <Route path='Login' element={<Login/>}/>
       </Routes>
       <Footer/>
     </Router>

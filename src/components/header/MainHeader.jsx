@@ -15,7 +15,7 @@ const MainHeader = () => {
             Lorem ipsum, dolor sit amet consectetur 
             adipisicing elit. Vero ratione delectus blanditiis, enim itaque architecto!
           </p>
-          <Link to='/plans' className='btn lg'>Get Started</Link>
+          <Link to='/register' className='btn lg'>Get Started</Link>
         </div>
         <div className="main__header-right">
           <div className="main__header-circle"></div>
