@@ -37,7 +37,7 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit" className="login-button">Login</button>
+        <button type="submit" className="login-button"><a href="/plans "> Login</a></button>
         <p className="register-link">
           Don’t have an account? <Link to="/register">Register here</Link>
         </p>

@@ -15,7 +15,23 @@ import Login from './Pages/loginPage/login'
 
 function App() {
   
+  // const [data, setData] = useState([]);
 
+  // useEffect(() => {
+  //   fetch('http://localhost:3001/api/data')
+  //     .then(response => response.json())
+  //     .then(data => setData(data))
+  //     .catch(error => console.error(error));
+  // }, []);
+
+  // return (
+  //   <div>
+  //     {data.map(item => (
+  //       <p key={item.id}>{item.name}</p>
+  //     ))}
+  //   </div>
+  // );
+ 
   return (
     <Router>
       <Navbar/>
